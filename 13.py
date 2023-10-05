@@ -8,13 +8,13 @@ vetor;
 (3) quantos dos valores do vetor são
 maiores que a média desses valores:'''
 
-A = [0]*5
-Par = [" "]*5
+A = [0]*30
+Par = [" "]*30
 maior = 0
 
 soma = 0
 
-for x in range (5):
+for x in range (30):
     A[x] = int(input(f"Digite o {x+1}º valor: "))
     if x == 0:
         menor = A[x]
@@ -24,18 +24,18 @@ for x in range (5):
     if A[x] < menor:
         menor = A[x]
 
-media = soma / 5
+media = soma / 30
 cont_maior_que_media = 0
-for w in range (5):
+for w in range (30):
     if A[w] > media :
         cont_maior_que_media += 1
 
-for y in range (5):
+for y in range (30):
     if A[y] % 2 == 0 :
         Par[y] = A[y]
 
 print(f"\n(1) Os numeros pares são: ")
-for z in range(5):
+for z in range(30):
     print(Par[z], end = "")
 
 print(f"\n(2) O menor de todos é o {menor}. \n"
