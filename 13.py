@@ -36,7 +36,8 @@ for y in range (30):
 
 print(f"\n(1) Os numeros pares são: ")
 for z in range(30):
-    print(Par[z], end = "")
+    if Par[z] != " " :
+        print(Par[z], end = " ")
 
 print(f"\n(2) O menor de todos é o {menor}. \n"
       f"(2) O maior de todos é  o {maior}. \n"
